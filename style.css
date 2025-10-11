@@ -35,7 +35,7 @@ body{
 
 .def{
     font-family: "VT323";
-    font-size: 30px;
+    font-size: 27px;
     text-align: center;
 
     margin-left: 0px;
@@ -54,4 +54,61 @@ body{
     
     padding-left: 10;
     padding-right: 10;
+}
+
+.f1 img{
+    height: auto;
+    width: 80px;
+    position:relative;
+    left: 300px;
+    top: 100px;
+    padding: 10px;
+
+}
+.f1 img:hover{
+    opacity: 0.75;
+    cursor: grab;
+    
+}
+.f1 img:active{
+    opacity: 0.6;
+    cursor:grabbing;
+}
+
+.f2 img{
+    height: auto;
+    width: 80px;
+    position:relative;
+    left: 400px;
+    top: 100px;
+    padding: 10px;
+
+}
+.f2 img:hover{
+    opacity: 0.75;
+    cursor: grab;
+    
+}
+.f2 img:active{
+    opacity: 0.6;
+    cursor:grabbing;
+}
+
+.f3 img{
+    height: auto;
+    width: 80px;
+    position:relative;
+    left: 600px;
+    top: 100px;
+    padding: 10px;
+
+}
+.f3 img:hover{
+    opacity: 0.75;
+    cursor: grab;
+    
+}
+.f3 img:active{
+    opacity: 0.6;
+    cursor:grabbing;
 }
