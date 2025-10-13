@@ -42,6 +42,56 @@ body{
     margin-top: 30px;
 }
 
+
+/* NOTE: put all folders under one class then add an id to each folder. 
+Also use position: absolute to place folders anywhere */
+.folder{
+    text-align: center;
+}
+.folder img{
+    height: auto;
+    width: 80px;
+    padding: 0px;
+}
+.folder img:hover{
+    opacity: 0.75;
+    cursor: grab;
+    
+}
+.folder img:active{
+    opacity: 0.6;
+    cursor:grabbing;
+}
+.folder .fname{
+    display: block;
+    margin-top: 0;
+    margin-bottom:0;
+    color:black;
+    font-family: "VT323";
+}
+
+#f1{
+    position:absolute;
+    top: 270px;
+    left: 470px;
+}
+#f2{
+    position:absolute;
+    top: 290px;
+    left: 650px;
+    
+}
+#f3 {
+    position:absolute;
+    top: 350px;
+    left: 830px;
+}
+#f4{
+    position: absolute;
+    top: 440px;
+    left: 500px;
+}
+
 .bar{
     height: 45px;
     width: 100%;
@@ -59,59 +109,38 @@ body{
     padding-right: 10;
 }
 
-.f1 img{
-    height: auto;
-    width: 80px;
-    position:relative;
-    left: 300px;
-    top: 100px;
-    padding: 10px;
-}
+.sbutton{
+    position:absolute;
+    left: 10px;
+    top: 5px;
+    bottom: 5px;
+    width: 100px;
 
-.f1 img:hover{
-    opacity: 0.75;
-    cursor: grab;
-    
-}
-.f1 img:active{
-    opacity: 0.6;
-    cursor:grabbing;
-}
-
-.f2 img{
-    height: auto;
-    width: 80px;
-    position:relative;
-    left: 400px;
-    top: 100px;
-    padding: 10px;
+    font-family:'VT323';
+    font-size: 25px;
+    text-align: center;
+    border-radius: 3px solid;
+    border-color: brown;
+    background-color: coral;
 
 }
-.f2 img:hover{
-    opacity: 0.75;
-    cursor: grab;
-    
+
+.sbutton:hover{
+    cursor:pointer;
 }
-.f2 img:active{
-    opacity: 0.6;
-    cursor:grabbing;
+.sbutton:active{
+    background-color:rgb(246, 99, 46);
 }
 
-.f3 img{
-    height: auto;
-    width: 80px;
-    position:relative;
-    left: 600px;
-    top: 100px;
-    padding: 10px;
+.ld{
+    position: absolute;
+    left: 125px;
+    height: 37px;
 
+    padding: 2px;
+    top: 2.5px;
+    bottom: 1px;
 }
-.f3 img:hover{
-    opacity: 0.75;
-    cursor: grab;
-    
-}
-.f3 img:active{
-    opacity: 0.6;
-    cursor:grabbing;
+.ld:hover{
+    cursor:pointer;
 }
