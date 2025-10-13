@@ -45,12 +45,15 @@ body{
 .bar{
     height: 45px;
     width: 100%;
-    background-color:rgb(7, 155, 31);
+    background-color:coral;
     position: fixed;
     bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    border: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 2px solid;
+    border-top-color:brown;
+    border-bottom-color:rgb(250, 141, 141);
     
     padding-left: 10;
     padding-right: 10;
@@ -63,8 +66,8 @@ body{
     left: 300px;
     top: 100px;
     padding: 10px;
-
 }
+
 .f1 img:hover{
     opacity: 0.75;
     cursor: grab;
