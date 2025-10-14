@@ -2,12 +2,16 @@
 body{
     margin:0;
 }
+a{
+    text-decoration: 0;
+    display: inline-block;
+}
 
 .title{
     font-family: "Coral Pixels";
     font-size: 80px;
     text-align:center;
-    margin-top:20px;
+    margin-top:30px;
     margin-bottom: 0px;
 
     user-select:none;
@@ -20,7 +24,7 @@ body{
 }
 .desc{
     font-family: "VT323";
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     margin-top: -10px;
 
@@ -45,55 +49,56 @@ body{
 
 /* NOTE: put all folders under one class then add an id to each folder. 
 Also use position: absolute to place folders anywhere */
-.folder{
+.icon{
     text-align: center;
 }
-.folder img{
+
+.icon img{
     height: auto;
-    width: 80px;
+    width: 90px;
     padding: 0px;
 }
-.folder img:hover{
+.icon img:hover{
     opacity: 0.75;
-    cursor: grab;
+    cursor: pointer;
     
 }
-.folder img:active{
+.icon img:active{
     opacity: 0.6;
-    cursor:grabbing;
 }
-.folder .fname{
+.icon .name{
     display: block;
     margin-top: 0;
     margin-bottom:0;
     color:black;
     font-family: "VT323";
+    text-align: center;
 }
 
-#f1{
+#proj{
     position:absolute;
-    top: 270px;
+    top: 240px;
     left: 470px;
 }
-#f2{
+#res{
     position:absolute;
     top: 290px;
-    left: 650px;
-    
+    left: 700px;
 }
-#f3 {
+
+#about {
     position:absolute;
-    top: 350px;
-    left: 830px;
+    top: 400px;
+    left: 880px;
 }
-#f4{
+#git{
     position: absolute;
-    top: 440px;
+    top: 460px;
     left: 500px;
 }
 
 .bar{
-    height: 45px;
+    height: 50px;
     width: 100%;
     background-color:coral;
     position: fixed;
@@ -109,6 +114,7 @@ Also use position: absolute to place folders anywhere */
     padding-right: 10;
 }
 
+
 .sbutton{
     position:absolute;
     left: 10px;
@@ -119,8 +125,15 @@ Also use position: absolute to place folders anywhere */
     font-family:'VT323';
     font-size: 25px;
     text-align: center;
+
     border-radius: 3px solid;
-    border-color: brown;
+    border-right: none;
+    border-bottom: none;
+
+    border-top-color: rgb(246, 194, 194);
+    border-left-color: rgb(246, 194, 194);
+    
+    box-shadow: 2px 2px rgb(89, 20, 20), -2px -2px inset rgb(132, 88, 88), 2px 2px inset rgb(241, 162, 162);
     background-color: coral;
 
 }
@@ -129,7 +142,13 @@ Also use position: absolute to place folders anywhere */
     cursor:pointer;
 }
 .sbutton:active{
-    background-color:rgb(246, 99, 46);
+    background-color:rgb(249, 169, 139);
+    border-top-color: rgb(89, 20, 20) ;
+    border-left-color: rgb(89, 20, 20);
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 2px 2px rgb(245, 180, 180), 2px 2px inset rgb(115, 71, 71), -2px -2px inset rgb(238, 152, 152);;
+
 }
 
 .ld{
@@ -137,10 +156,48 @@ Also use position: absolute to place folders anywhere */
     left: 125px;
     height: 37px;
 
-    padding: 2px;
-    top: 2.5px;
-    bottom: 1px;
+    padding: 5px;
+    top: 2px;
+    bottom: 2px;
 }
 .ld:hover{
     cursor:pointer;
+}
+
+.resume{
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    left: 330px;
+}
+.resume:hover{
+    cursor:none;
+}
+
+/*gifs*/
+.dino{
+    position:absolute;
+    top: 675px;
+    right: 60px;
+    margin-left:0;
+/*
+    animation: walk;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;*/
+}
+.dino img{
+    height: 100px;
+    width: auto;
+}
+
+@keyframes walk{
+    from{
+        margin-left:0%;
+    }
+    to{
+        margin-right:50%;
+    }
+    to{
+        margin-left:100%;
+    }
 }
