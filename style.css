@@ -299,7 +299,7 @@ Also use position: absolute to place folders anywhere */
     text-align: center;
     padding:0;
     
-    margin: 70px 300px 10px 300px;
+    margin: 50px 300px 5px 300px;
 
 }
 
@@ -315,15 +315,22 @@ Also use position: absolute to place folders anywhere */
     position: fixed;
     top: 0px;
     left: 15px;
-
+    color:gray;
     user-select:none;
     -moz-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
 }
 .directory:hover{
+    cursor: pointer;
+}
+.directory a{
+    color:gray;
+}
+.directory a:hover{
     cursor:pointer;
-    font-weight:bold;
+    font-weight:bolder;
+    color: rgb(95, 93, 93);
 }
 
 /*REPO*/
@@ -334,12 +341,31 @@ Also use position: absolute to place folders anywhere */
     font-family:"vt323";
     font-size: 25px;
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding:0;
 
-    color:rgb(68, 68, 249);
+    color:rgb(102, 102, 251);
     
 }
 .repo a:hover{
-    color:rgb(121, 121, 239);
+    color:rgb(148, 148, 243);
+}
+
+.created{
+    font-family: "vt323";
+    color: rgb(120, 189, 141);
+    text-align: center;
+
+    font-size: 23px;
+    padding-bottom: 5px;
+}
+
+/*ABOUT*/
+.kaush{
+    margin: 100px auto 0 auto;
+    width: 35%;
+}
+.kaush img{
+    height: 350px;
+    width: auto;
 }
