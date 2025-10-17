@@ -5,6 +5,7 @@ body{
 a{
     text-decoration: 0;
     display: inline-block;
+    color: black;
 }
 
 .title{
@@ -97,6 +98,7 @@ Also use position: absolute to place folders anywhere */
     left: 500px;
 }
 
+/*BAR STUFF*/
 .bar{
     height: 50px;
     width: 100%;
@@ -113,8 +115,6 @@ Also use position: absolute to place folders anywhere */
     padding-left: 10;
     padding-right: 10;
 }
-
-
 .barbutton{
     font-family:'VT323';
     font-size: 30px;
@@ -219,6 +219,7 @@ Also use position: absolute to place folders anywhere */
 }
 
 
+/*RESUME*/
 .resume{
     position: absolute;
     top: 25px;
@@ -255,4 +256,56 @@ Also use position: absolute to place folders anywhere */
     to{
         margin-left:100%;
     }
+}
+
+/*PROJECTS*/
+.app{
+    text-align: center;
+}
+.app img{
+    width: 170px;
+    height: auto;
+    padding:0px;
+}
+.app .appname{
+    font-family:"VT323";
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin:0;
+}
+.app:hover{
+    cursor:pointer;
+    opacity: 0.8;
+}
+#hs{
+    position: absolute;
+    top: 250px;
+    left: 470px;
+}
+
+/*HOTSTOX EMBED*/
+
+.hotstox{
+    height: fit-content;
+    width: 900px;
+    position: absolute;
+    top: 110px;
+    left: 280px;
+}
+/*DIRECTORY*/
+.directory{
+    font-family:"VT323";
+    font-size: 20px;
+    position: fixed;
+    left: 15px;
+
+    user-select:none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+.directory:hover{
+    cursor:pointer;
+    font-weight:bold;
 }
