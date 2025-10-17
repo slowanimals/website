@@ -288,16 +288,32 @@ Also use position: absolute to place folders anywhere */
 
 .hotstox{
     height: fit-content;
-    width: 900px;
-    position: absolute;
-    top: 110px;
-    left: 280px;
+
+    margin: 0px auto 5px auto;
+    width: 62%;
+}
+
+.hsdesc{
+    font-family:"vt323";
+    font-size: 25px;
+    text-align: center;
+    padding:0;
+    
+    margin: 70px 300px 10px 300px;
+
+}
+
+.hsdesc p{
+    margin: 0;
+    padding: 0;
 }
 /*DIRECTORY*/
 .directory{
+
     font-family:"VT323";
     font-size: 20px;
     position: fixed;
+    top: 0px;
     left: 15px;
 
     user-select:none;
@@ -308,4 +324,22 @@ Also use position: absolute to place folders anywhere */
 .directory:hover{
     cursor:pointer;
     font-weight:bold;
+}
+
+/*REPO*/
+.repo{
+    text-align: center;
+}
+.repo a{
+    font-family:"vt323";
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding:0;
+
+    color:rgb(68, 68, 249);
+    
+}
+.repo a:hover{
+    color:rgb(121, 121, 239);
 }
