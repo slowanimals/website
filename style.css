@@ -23,6 +23,10 @@ a{
 .title:hover{
     cursor:grab;
 }
+
+@media (max-width: 600px){
+
+}
 .desc{
     font-family: "VT323";
     font-size: 35px;
@@ -52,12 +56,14 @@ a{
 Also use position: absolute to place folders anywhere */
 .icon{
     text-align: center;
+    display: inline-block;
 }
 
 .icon img{
     height: auto;
     width: 18%;
     padding: 0px;
+    margin: 0 auto;
 }
 .icon img:hover{
     opacity: 0.75;
