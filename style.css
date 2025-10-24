@@ -42,6 +42,7 @@ a{
 }
 .title:hover{
     cursor:grab;
+    transform: scale3d(1.3, 0.9, 1)
 }
 
 #descont{
@@ -274,7 +275,7 @@ Also use position: absolute to place folders anywhere */
     position: absolute;
     top: 25px;
     bottom: 25px;
-    left: 330px;
+    justify-self: center;
 }
 .resume:hover{
     cursor:none;
