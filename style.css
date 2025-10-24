@@ -72,12 +72,13 @@ a{
 Also use position: absolute to place folders anywhere */
 .folder_container{
     width: 8vw;
-    border: 1px solid black;
+    border: none;
+    
 }
 #namecont{
     justify-self: center;
     margin-top: -1%;
-    
+    border: none;
 }
 
 .icon{
