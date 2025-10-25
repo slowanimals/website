@@ -202,6 +202,42 @@ p{
         transform: translateX(0px) rotate(0deg);
     }
 }
+@keyframes jiggle{
+
+    0%{
+        transform: translateX(0vw);
+    }
+    10%{
+        transform: translateX(2vw);
+    }
+    20%{
+        transform: translateX(-2vw);
+    }
+    30%{
+        transform: translateX(-2vw);
+    }
+    40%{
+        transform: translateX(2vw);
+    }
+    50%{
+        transform: translateX(2vw);
+    }
+    60%{
+        transform: translateX(-2vw);
+    }
+    70%{
+        transform: translateX(-2vw);
+    }
+    80%{
+        transform: translateX(2vw);
+    }
+    90%{
+        transform: translateX(-2vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
 
 
 
