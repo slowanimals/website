@@ -135,7 +135,7 @@ p{
     display: block;
 }
 .timeline_desc img:hover{
-    animation: wobble 5s;
+    animation: wobble 4s;
 }
 .timeline_desc p{
     padding: 0 0 1vh 0;
@@ -163,7 +163,7 @@ p{
     grid-column: 1;
     padding-left: 1vw;
     padding-right: 0vw;
-    margin: -3vh -6vw 0 0;
+    margin: -4.2vh -6vw 2vh 0;
     align-items: right;
     justify-self: right;
     text-align: right;
@@ -180,9 +180,11 @@ p{
 }
 #website:hover{
     cursor: pointer;
-    animation: wobble 5s;
+    animation: wobble 4s;
 }
 
+
+/*ANIMATIONS*/
 @keyframes wobble {
     0%{
         transform: translateX(0px) rotate(0deg);
@@ -191,7 +193,7 @@ p{
         transform: translateX(25px) rotate(5deg);
     }
     50%{
-        transform: translateX(-20px) rotate(-10deg);
+        transform: translateX(-20px) rotate(-8deg);
     }
     75%{
         transform: translateX(15px) rotate(3deg);
