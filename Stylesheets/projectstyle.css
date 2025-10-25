@@ -93,7 +93,7 @@ p{
 }
 .middle:hover{
     cursor: pointer;
-    transform: scale(1.005);
+    transform: scale(1.01);
 }
 
 .point{
@@ -135,7 +135,7 @@ p{
     display: block;
 }
 .timeline_desc img:hover{
-    animation: wobble 4s;
+    animation: pulse 2s ease-in-out;
 }
 .timeline_desc p{
     padding: 0 0 1vh 0;
@@ -180,7 +180,7 @@ p{
 }
 #website:hover{
     cursor: pointer;
-    animation: wobble 4s;
+    animation: pulse 2s ease-in-out;
 }
 
 
@@ -200,6 +200,18 @@ p{
     }
     100%{
         transform: translateX(0px) rotate(0deg);
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    50%{
+        transform: scale3d(1.1,1.1,1.1);
+    }
+    100%{
+        transform: scale3d(1,1,1);
     }
 }
 @keyframes jiggle{
