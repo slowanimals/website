@@ -27,11 +27,155 @@ a{
 
 
 /*ABOUT*/
-.kaush{
-    margin: 100px auto 0 auto;
-    width: 35%;
+.biocont{
+    border: 0px solid black;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 1%;
+    width: 60vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
-.kaush img{
-    height: 350px;
-    width: auto;
+.biocont img{
+    height: auto;
+    width: 40%;
+    position: relative;
+    border: 0px purple solid;
+    margin-bottom: 2%;
+}
+.biocont p{
+    border: 0px green solid;
+    display: block;
+    text-align:center;
+    margin-top: 1%;
+    font-family: 'vt323';
+    font-size: 1.89vw;
+    width: 100%;
+    color: black;
+}
+
+
+/*BAR STUFF*/
+.bar{
+    height: 50px;
+    width: 100%;
+    background-color:coral;
+    position: fixed;
+    bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 1px solid;
+    border-bottom: 2px solid;
+    border-top-color:brown;
+    border-bottom-color:rgb(250, 141, 141);
+    
+    padding-left: 10;
+    padding-right: 10;
+}
+.barbutton{
+    font-family:'VT323';
+    font-size: 30px;
+    text-align: center;
+
+    top: 5px;
+    bottom: 5px;
+
+    border-radius: 3px solid;
+    border-right: none;
+    border-bottom: none;
+
+    border-top-color: rgb(246, 194, 194);
+    border-left-color: rgb(246, 194, 194);
+    
+    box-shadow: 2px 2px rgb(89, 20, 20), -2px -2px inset rgb(132, 88, 88), 2px 2px inset rgb(241, 162, 162);
+    background-color: coral;
+
+}
+
+.barbutton:hover{
+    cursor:pointer;
+}
+.barbutton:active{
+    background-color:rgb(249, 169, 139);
+    border-top-color: rgb(89, 20, 20) ;
+    border-left-color: rgb(89, 20, 20);
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 2px 2px rgb(245, 180, 180), 2px 2px inset rgb(115, 71, 71), -2px -2px inset rgb(238, 152, 152);;
+}
+
+#start{
+    position:absolute;
+    left: 10px;
+    width: 120px;
+}
+
+#ld{
+    position: absolute;
+    left: 145px;
+    
+    background-color:white;
+    padding: 5px;
+    top: 2px;
+    bottom: 3px;
+}
+#ld img{
+    height: 35px;
+    bottom: 2px;
+}
+#ld img:active{
+    opacity:0.5;
+}
+#ld:active{
+    box-shadow: 2px 2px rgb(67, 66, 66) inset, -2px -2px gray inset;
+    background-color:white;
+}
+
+#spot{
+    position: absolute;
+    left: 255px;
+
+    padding: 5px;
+    top: 2px;
+    bottom: 3px;
+    background-color: rgb(96, 94, 94);
+}
+#spot img{
+    height: 35px;
+    bottom: 2px;
+}
+#spot img:active{
+    opacity:0.5;
+}
+#spot:active{
+    box-shadow: 2px 2px rgb(28, 27, 27) inset, -2px -2px rgb(66, 66, 66) inset;
+    background-color: rgb(96, 94, 94);
+}
+
+#insta{
+    position: absolute;
+    left: 200px;
+
+    padding: 5px;
+    top: 2px;
+    bottom: 3px;
+    background-color: rgb(202, 171, 112);
+}
+#insta img{
+    height: 35px;
+    bottom: 2px;
+    margin-right: 1px;
+    margin-bottom: 2px;
+}
+#insta img:active{
+    opacity: 0.5;
+}
+#insta:active{
+    box-shadow: 2px 2px rgb(65, 49, 36) inset, -2px -2px rgb(112, 83, 70) inset;
+    background-color:rgb(131, 106, 63);
 }
