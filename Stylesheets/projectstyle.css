@@ -271,11 +271,12 @@ p{
 
 .hotstox{
     height: fit-content;
-    border: 4px solid black;
+    border: 1px solid gray;
+    border-radius: 13px;
     justify-self: center;
     justify-content: center;
     width: 65vw;
-    margin-top: 3vh;
+    margin-top: 5vh;
     margin-bottom: 0;
 }
 .hotstox iframe{
@@ -287,11 +288,12 @@ p{
 
 .hsdesc{
     font-family:"vt323";
-    font-size: 25px;
-    text-align: center;
+    font-size: 2.5vw;
     padding:0;
-    border: 4px solid green;
-    margin: 50px 300px 5px 300px;
+    border: 0px solid green;
+    width: fit-content;
+    justify-self: center;
+    margin-top: 3vh;
 }
 
 
@@ -301,9 +303,9 @@ p{
 }
 .repo a{
     font-family:"vt323";
-    font-size: 25px;
+    font-size: 2.5vw;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding:0;
 
     color:rgb(102, 102, 251);
