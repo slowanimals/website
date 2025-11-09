@@ -306,7 +306,7 @@ Also use position: absolute to place folders anywhere */
     #ticont{
         justify-self: center;
         border: none;
-        margin-top: 15vh;
+        margin-top: 10vh;
         text-align: center;
     }
     .title{
