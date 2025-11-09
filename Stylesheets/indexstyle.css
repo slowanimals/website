@@ -51,43 +51,6 @@ a{
     cursor: pointer;
     animation: fall 7s ease-in-out;
 }
-
-@keyframes fall{
-    0%{
-        transform: translateX(0px) translateY(0px);
-    }
-    5%{
-        transform: translateX(0.5vw) rotate(5deg) translateY(2vh);
-    }
-    10%{
-        transform: translateX(-1vw) rotate(-6deg);
-    }
-    15%{
-        transform: translateX(0.5vw) rotate(8deg);
-    }
-    20%{
-        transform: translateX(2vw) rotate(-9deg);
-    }
-    30%{
-        transform: translateX(1vw) rotate(5deg);
-    }
-    40%{
-        transform: translateX(-0.5vw) rotate(-7deg);
-    }
-    50%{
-        transform: translateX(1vw) rotate(4deg);
-    } 
-    68%{
-        transform: translateX(0vw) rotate(-5deg);
-    } 
-    85%{
-        transform: translateX(0vw) rotate(8deg);
-    } 
-    100%{
-        transform: translateX(0px) rotate(4deg) translateY(100vh);
-    }
-}
-
 #descont{
     justify-self: center;
     border: none;
@@ -105,6 +68,9 @@ a{
     -webkit-touch-callout: none;
     -webkit-user-select: none;
 }
+
+
+
 
 
 
@@ -189,6 +155,131 @@ Also use position: absolute to place folders anywhere */
     top: 34%;
     left: 37%;
 }
+
+
+@media (max-width: 400px){
+    .container{
+        border: 3px solid black;
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+    }
+    #ticont{
+        justify-self: center;
+        border: none;
+        margin-top: 15vh;
+    }
+    .title{
+        font-family: "Coral Pixels";
+        font-size: 17.5vw;
+        text-align:center;
+        margin: 0;
+        display: inline-block;
+
+        user-select:none;
+        -moz-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+    .title:hover{
+        cursor: pointer;
+        animation: fall 7s ease-in-out;
+    }
+    
+    #descont{
+    justify-self: center;
+    border: none;
+    margin: 1vh;
+    width: 50%;
+    }
+    .desc{
+        font-family: "VT323";
+        font-size: 8vw;
+        text-align: center;
+        margin: 0;
+        display: inline-block;
+
+        user-select:none;
+        -moz-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+
+    /************************************/
+
+    .folder_container{
+        width: 25vw;
+        border: none;
+    }
+    #namecont{
+        justify-self: center;
+        margin-top: -6%;
+        border: none;
+        font-size: 4.5vw;
+    }
+    .icon{
+        display: inline-block;
+    }
+    .icon img{
+        height: auto;
+        width: 100%; /*allows for folders to just be complete size of container, resize with foldcont*/
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .icon img:hover{
+        opacity: 0.75;
+        cursor: pointer;
+        
+    }
+    .icon img:active{
+        opacity: 0.6;
+    }
+    .icon .name{
+        display: inline-block;
+        margin: 0;
+        color:black;
+        font-family: "VT323";
+        /* text-align: center; */
+    }
+
+    /*position within container*/
+    #proj{
+        position:relative;
+    }
+    #res{
+        position:relative;
+    }
+
+    #about {
+        position:relative;
+    }
+    #git{
+        position: relative;
+    }
+
+    /*overall folder position*/
+    #projcont{
+        position: absolute;
+        top: 2%;
+        left: 20%;
+    }
+    #rescont{
+        position: absolute;
+        top: 7%;
+        left: 55%;
+    }
+    #abcont{
+        position: absolute;
+        top: 30%;
+        right: 17%;
+    }
+    #gitcont{
+        position: absolute;
+        top: 22%;
+        left: 15%;
+    }
+}
+
 
 /*BAR*/
 
@@ -311,3 +402,40 @@ Also use position: absolute to place folders anywhere */
     background-color:rgb(131, 106, 63);
 }
 
+/*ANIMATIONS*/
+
+@keyframes fall{
+    0%{
+        transform: translateX(0px) translateY(0px);
+    }
+    5%{
+        transform: translateX(0.5vw) rotate(5deg) translateY(2vh);
+    }
+    10%{
+        transform: translateX(-1vw) rotate(-6deg);
+    }
+    15%{
+        transform: translateX(0.5vw) rotate(8deg);
+    }
+    20%{
+        transform: translateX(2vw) rotate(-9deg);
+    }
+    30%{
+        transform: translateX(1vw) rotate(5deg);
+    }
+    40%{
+        transform: translateX(-0.5vw) rotate(-7deg);
+    }
+    50%{
+        transform: translateX(1vw) rotate(4deg);
+    } 
+    68%{
+        transform: translateX(0vw) rotate(-5deg);
+    } 
+    85%{
+        transform: translateX(0vw) rotate(8deg);
+    } 
+    100%{
+        transform: translateX(0px) rotate(4deg) translateY(100vh);
+    }
+}
