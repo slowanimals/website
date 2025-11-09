@@ -281,6 +281,10 @@ Also use position: absolute to place folders anywhere */
 
 
 @media (max-width: 500px){
+    body{
+        overflow: hidden;
+        text-align: center !important;
+    }
     .wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -426,9 +430,7 @@ Also use position: absolute to place folders anywhere */
 
     /**********************/
     /*BAR*/
-    body{
-        overflow: hidden;
-    }
+    
     .bar{
         height: 50px;
         width: 100%;
