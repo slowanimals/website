@@ -157,138 +157,6 @@ Also use position: absolute to place folders anywhere */
 }
 
 
-@media (max-width: 500px){
-    .container{
-        border: 3px solid black;
-        text-align: center;
-        height: fit-content;
-        width: fit-content;
-    }
-    a{
-        text-decoration: 0;
-        display: inline-block;
-        color: black;
-    }
-    #ticont{
-        justify-self: center;
-        border: none;
-        margin-top: 15vh;
-        text-align: center;
-    }
-    .title{
-        font-family: "Coral Pixels";
-        font-size: 17.5vw;
-        text-align:center;
-        margin: 0;
-        display: inline-block;
-
-        user-select:none;
-        -moz-user-select: none;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-    }
-    .title:hover{
-        cursor: pointer;
-        animation: fall 7s ease-in-out;
-    }
-    
-    #descont{
-        justify-self: center;
-        border: none;
-        margin: -0.5vh;
-        width: 50%;
-        text-align: center;
-    }
-    .desc{
-        font-family: "VT323";
-        font-size: 8vw;
-        text-align: center;
-        margin: 0;
-        display: inline-block;
-
-        user-select:none;
-        -moz-user-select: none;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-    }
-
-    /************************************/
-
-    .folder_container{
-        width: 25vw;
-        border: none;
-    }
-    #namecont{
-        justify-self: center;
-        margin-top: -6%;
-        border: none;
-        font-size: 4.5vw;
-        color:black;
-        text-align: center;
-    }
-    .icon{
-        display: inline-block;
-    }
-    .icon img{
-        height: auto;
-        width: 100%; /*allows for folders to just be complete size of container, resize with foldcont*/
-        padding: 0px;
-        margin: 0 auto;
-    }
-    .icon img:hover{
-        opacity: 0.75;
-        cursor: pointer;
-        
-    }
-    .icon img:active{
-        opacity: 0.6;
-    }
-    .icon .name{
-        display: inline-block;
-        margin: 0;
-        color:black;
-        font-family: "VT323";
-    }
-
-    /*position within container*/
-    #proj{
-        position:relative;
-    }
-    #res{
-        position:relative;
-    }
-
-    #about {
-        position:relative;
-    }
-    #git{
-        position: relative;
-    }
-
-    /*overall folder position*/
-    #projcont{
-        position: absolute;
-        top: 2%;
-        left: 20%;
-    }
-    #rescont{
-        position: absolute;
-        top: 7%;
-        left: 55%;
-    }
-    #abcont{
-        position: absolute;
-        top: 30%;
-        right: 17%;
-    }
-    #gitcont{
-        position: absolute;
-        top: 22%;
-        left: 15%;
-    }
-}
-
-
 /*BAR*/
 
 .bar{
@@ -409,6 +277,276 @@ Also use position: absolute to place folders anywhere */
     box-shadow: 2px 2px rgb(65, 49, 36) inset, -2px -2px rgb(112, 83, 70) inset;
     background-color:rgb(131, 106, 63);
 }
+
+
+@media (max-width: 500px){
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3vw;
+        margin-top: 5vh;
+        margin-bottom: none;
+        position: relative;
+        width: 100%;
+        height: 50vh;
+    }
+    .container{
+        border: 3px solid black;
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+    }
+    a{
+        text-decoration: 0;
+        display: inline-block;
+        color: black;
+    }
+    #ticont{
+        justify-self: center;
+        border: none;
+        margin-top: 15vh;
+        text-align: center;
+    }
+    .title{
+        font-family: "Coral Pixels";
+        font-size: 17.5vw;
+        text-align:center;
+        margin: 0;
+        display: inline-block;
+
+        user-select:none;
+        -moz-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+    .title:hover{
+        cursor: pointer;
+        animation: fall 7s ease-in-out;
+    }
+    
+    #descont{
+        justify-self: center;
+        border: none;
+        margin: -0.5vh;
+        width: 50%;
+        text-align: center;
+    }
+    .desc{
+        font-family: "VT323";
+        font-size: 8vw;
+        text-align: center;
+        margin: 0;
+        display: inline-block;
+
+        user-select:none;
+        -moz-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+
+    /************************************/
+
+    .folder_container{
+        width: 25vw;
+        border: none;
+    }
+    #namecont{
+        justify-self: center;
+        margin-top: -6%;
+        border: none;
+        font-size: 4.5vw;
+        color:black;
+        text-align: center;
+    }
+    .icon{
+        display: inline-block;
+    }
+    .icon img{
+        height: auto;
+        width: 100%; /*allows for folders to just be complete size of container, resize with foldcont*/
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .icon img:hover{
+        opacity: 0.75;
+        cursor: pointer;
+        
+    }
+    .icon img:active{
+        opacity: 0.6;
+    }
+    .icon .name{
+        display: inline-block;
+        margin: 0;
+        color:black;
+        font-family: "VT323";
+    }
+
+    /*position within container*/
+    #proj{
+        position:relative;
+    }
+    #res{
+        position:relative;
+    }
+
+    #about {
+        position:relative;
+    }
+    #git{
+        position: relative;
+    }
+
+    /*overall folder position*/
+    #projcont{
+        position: absolute;
+        top: 2%;
+        left: 20%;
+    }
+    #rescont{
+        position: absolute;
+        top: 15%;
+        left: 55%;
+    }
+    #abcont{
+        position: absolute;
+        top: 50%;
+        right: 17%;
+    }
+    #gitcont{
+        position: absolute;
+        top: 40%;
+        left: 15%;
+    }
+
+    /**********************/
+    /*BAR*/
+    body{
+        overflow: hidden;
+    }
+    .bar{
+        height: 50px;
+        width: 100%;
+        background-color:coral;
+        position: fixed;
+        bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        border-top: 1px solid;
+        border-bottom: 2px solid;
+        border-top-color:brown;
+        border-bottom-color:rgb(250, 141, 141);
+        
+        padding-left: 10;
+        padding-right: 10;
+    }
+    .barbutton{
+        font-family:'VT323';
+        font-size: 30px;
+        text-align: center;
+
+        top: 5px;
+        bottom: 5px;
+
+        border-radius: 3px solid;
+        border-right: none;
+        border-bottom: none;
+
+        border-top-color: rgb(246, 194, 194);
+        border-left-color: rgb(246, 194, 194);
+        
+        box-shadow: 2px 2px rgb(89, 20, 20), -2px -2px inset rgb(132, 88, 88), 2px 2px inset rgb(241, 162, 162);
+        background-color: coral;
+
+    }
+
+    .barbutton:hover{
+        cursor:pointer;
+    }
+    .barbutton:active{
+        background-color:rgb(249, 169, 139);
+        border-top-color: rgb(89, 20, 20) ;
+        border-left-color: rgb(89, 20, 20);
+        border-right: none;
+        border-bottom: none;
+        box-shadow: 2px 2px rgb(245, 180, 180), 2px 2px inset rgb(115, 71, 71), -2px -2px inset rgb(238, 152, 152);;
+    }
+
+    #start{
+        position:absolute;
+        left: 10px;
+        width: 120px;
+    }
+
+    #ld{
+        position: absolute;
+        left: 145px;
+        
+        background-color:white;
+        padding: 5px;
+        top: 2px;
+        bottom: 3px;
+    }
+    #ld img{
+        height: 35px;
+        bottom: 2px;
+    }
+    #ld img:active{
+        opacity:0.5;
+    }
+    #ld:active{
+        box-shadow: 2px 2px rgb(67, 66, 66) inset, -2px -2px gray inset;
+        background-color:white;
+    }
+
+    #spot{
+        position: absolute;
+        left: 255px;
+
+        padding: 5px;
+        top: 2px;
+        bottom: 3px;
+        background-color: rgb(96, 94, 94);
+    }
+    #spot img{
+        height: 35px;
+        bottom: 2px;
+    }
+    #spot img:active{
+        opacity:0.5;
+    }
+    #spot:active{
+        box-shadow: 2px 2px rgb(28, 27, 27) inset, -2px -2px rgb(66, 66, 66) inset;
+        background-color: rgb(96, 94, 94);
+    }
+
+    #insta{
+        position: absolute;
+        left: 200px;
+
+        padding: 5px;
+        top: 2px;
+        bottom: 3px;
+        background-color: rgb(202, 171, 112);
+    }
+    #insta img{
+        height: 35px;
+        bottom: 2px;
+        margin-right: 1px;
+        margin-bottom: 2px;
+    }
+    #insta img:active{
+        opacity: 0.5;
+    }
+    #insta:active{
+        box-shadow: 2px 2px rgb(65, 49, 36) inset, -2px -2px rgb(112, 83, 70) inset;
+        background-color:rgb(131, 106, 63);
+    }
+}
+
+
 
 /*ANIMATIONS*/
 
