@@ -157,7 +157,7 @@ Also use position: absolute to place folders anywhere */
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     .container{
         border: 3px solid black;
         text-align: center;
@@ -187,10 +187,10 @@ Also use position: absolute to place folders anywhere */
     }
     
     #descont{
-    justify-self: center;
-    border: none;
-    margin: 1vh;
-    width: 50%;
+        justify-self: center;
+        border: none;
+        margin: -0.5vh;
+        width: 50%;
     }
     .desc{
         font-family: "VT323";
