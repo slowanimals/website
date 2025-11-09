@@ -308,6 +308,7 @@ Also use position: absolute to place folders anywhere */
         border: none;
         margin-top: 5vh;
         text-align: center;
+        justify-items: center !important;
     }
     .title{
         font-family: "Coral Pixels";
@@ -332,6 +333,7 @@ Also use position: absolute to place folders anywhere */
         margin: -0.5vh;
         width: 100% !important;
         text-align: center !important;
+        color: black !important;
     }
     .desc{
         font-family: "VT323";
@@ -354,6 +356,7 @@ Also use position: absolute to place folders anywhere */
     }
     #namecont{
         justify-self: center;
+        justify-items: center !important;
         margin-top: -6%;
         border: none;
         font-size: 4.5vw;
