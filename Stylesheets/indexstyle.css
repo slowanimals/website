@@ -1,6 +1,7 @@
 body{
     margin:0;
     overflow: hidden;
+    text-align: center !important;
 }
 a{
     text-decoration: 0;
