@@ -164,10 +164,16 @@ Also use position: absolute to place folders anywhere */
         height: fit-content;
         width: fit-content;
     }
+    a{
+        text-decoration: 0;
+        display: inline-block;
+        color: black;
+    }
     #ticont{
         justify-self: center;
         border: none;
         margin-top: 15vh;
+        text-align: center;
     }
     .title{
         font-family: "Coral Pixels";
@@ -191,6 +197,7 @@ Also use position: absolute to place folders anywhere */
         border: none;
         margin: -0.5vh;
         width: 50%;
+        text-align: center;
     }
     .desc{
         font-family: "VT323";
@@ -216,6 +223,8 @@ Also use position: absolute to place folders anywhere */
         margin-top: -6%;
         border: none;
         font-size: 4.5vw;
+        color:black;
+        text-align: center;
     }
     .icon{
         display: inline-block;
@@ -239,7 +248,6 @@ Also use position: absolute to place folders anywhere */
         margin: 0;
         color:black;
         font-family: "VT323";
-        /* text-align: center; */
     }
 
     /*position within container*/
