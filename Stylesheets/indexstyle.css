@@ -30,6 +30,7 @@ a{
 #ticont{
     justify-self: center;
     border: none;
+    width: 100%;
 }
 .title{
     font-family: "Coral Pixels";
@@ -57,6 +58,7 @@ a{
     justify-self: center;
     border: none;
     margin: -10px;
+    width: 100%;
 }
 .desc{
     font-family: "VT323";
@@ -314,6 +316,7 @@ Also use position: absolute to place folders anywhere */
         margin-top: 5vh;
         text-align: center;
         justify-items: center !important;
+        width: 100%;
     }
     .title{
         font-family: "Coral Pixels";
