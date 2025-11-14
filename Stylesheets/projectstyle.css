@@ -296,60 +296,6 @@ p{
 }
 
 
-/*NOMAD*/
-.ticont{
-    justify-self: center;
-    border: 0px solid black;
-    margin-top: 5vh;
-}
-.title{
-    font-family: "Jacquard 12";
-    font-size: 8vw;
-    text-align:center;
-    margin: 0;
-    display: inline-block;
-
-    user-select:none;
-    -moz-user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-}
-
-.nomaddesc{
-    margin: 3vh 0 3vh 0;
-    padding: 0;
-    text-align: left;
-    border: 0px solid black;
-    width: 80vw;
-    justify-self: center;
-    justify-items: center;
-    font-family: 'vt323';
-    
-}
-
-.nomaddesc p{
-    font-size: 1.5vw;
-    margin-bottom: 1vh;
-}
-
-#date{
-    text-align: left;
-    font-weight: bold;
-    font-size: 1.7vw;
-    margin-bottom: -2vh;
-}
-
-
-.nomimg{
-    border: 0px solid black;
-    width: 50vw;
-    justify-self: center;
-    margin-top: 0.5vh;
-}
-.nomimg img{
-    width: 100%;
-    position: relative;
-}
 /*REPO*/
 .repo{
     text-align: center;

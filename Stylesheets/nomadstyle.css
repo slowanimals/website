@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(0, 0, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ticont{
+    justify-self: center;
+    border: 0px solid black;
+}
+.title{
+    font-family: "Jacquard 12";
+    font-size: 8vw;
+    text-align:center;
+    margin: 0;
+    display: inline-block;
+    color: rgb(255, 217, 0);
+    user-select:none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.nomaddesc{
+    border: 0px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    font-family: 'vt323';
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    
+}
+
+.nomaddesc p{
+    font-size: 1.5vw;
+    color: white;
+    align-self: center;
+    justify-self: center;
+}
+
+#date{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.7vw;
+    margin-bottom: -2vh;
+}
+
+
+.nomimg{
+    border: 0px solid black;
+    width: 50vw;
+    justify-self: center;
+}
+.nomimg img{
+    width: 100%;
+    position: relative;
+    border-radius: 25px;
+}
+/*REPO*/
+.repo{
+    text-align: center;
+}
+.repo a{
+    font-family:"vt323";
+    font-size: 2.7vw;
+    padding-bottom:5%;;
+    color:rgb(64, 255, 0);
+}
+.repo a:hover{
+    opacity: 0.7;
+}
+
+.created{
+    font-family: "vt323";
+    color: rgb(120, 189, 141);
+    text-align: center;
+
+    font-size: 23px;
+    padding-bottom: 5px;
+}
