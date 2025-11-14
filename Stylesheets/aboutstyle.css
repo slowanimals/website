@@ -39,6 +39,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0%;
 
 }
 .biocont img{
@@ -52,11 +53,11 @@ a{
     border: 0px green solid;
     display: block;
     text-align:center;
-    margin-top: 1%;
     font-family: 'vt323';
-    font-size: 1.89vw;
+    font-size: 1.75vw;
     width: 100%;
     color: black;
+    margin: 0;
 }
 
 
