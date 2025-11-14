@@ -5,6 +5,7 @@ a{
     text-decoration: 0;
     display: inline-block;
     color: black;
+    padding: 0;
 }
 p{
     margin: 0;
@@ -182,7 +183,13 @@ p{
     cursor: pointer;
     animation: pulse 2s ease-in-out;
 }
-
+#nomadlogo{
+    font-family: 'Jacquard 12';
+    color: rgb(0, 0, 0);
+    font-size: 8vw;
+    padding: 0;
+    margin-bottom: -5%;
+}
 
 /*ANIMATIONS*/
 @keyframes wobble {
