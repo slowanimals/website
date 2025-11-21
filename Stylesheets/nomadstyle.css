@@ -39,7 +39,6 @@ body{
     font-family: 'vt323';
     justify-content: center;
     width: 40%;
-    
 }
 
 .nomaddesc p{
@@ -47,6 +46,15 @@ body{
     color: white;
     align-self: center;
     justify-self: flex-start;
+}
+
+.features{
+    align-self: center;
+    width: 80%;
+    color: white;
+    font-size: 1.4vw;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #date{
@@ -74,7 +82,7 @@ body{
 .repo a{
     font-family:"vt323";
     font-size: 2.7vw;
-    padding-bottom:5%;;
+    padding-bottom:2%;;
     color:rgb(64, 255, 0);
 }
 .repo a:hover{
@@ -89,3 +97,4 @@ body{
     font-size: 23px;
     padding-bottom: 5px;
 }
+

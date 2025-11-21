@@ -44,28 +44,35 @@
         </div>
         <p>
             With <b>Nomad</b>, I've attempted to create a locally run Python application that visualizes your journeys across
-            the world. The application takes in images that you upload, plots them across a map, then draws polylines 
-            between them that approximate the routes that you've taken.
+            the world. The application takes in images that you upload, then extracts their GPS metadata to plot them
+            across a world map and calculate metrics.
             <br>
-            There's currently just a singular metric showing the amount of the Earth that you've seen, and I'm hoping to expand upon
-            it with more statistics. Since the Earth has 57.5 million square miles of land, I had to use normalization
-             and logarithms to be able to show visible progress on the bar.
             <br>
-            I'm working on turning this into a downloadable app. If you'd like to try it out right now, follow
-            the download instructions on its Github page.
+            <u><b>Features:</b></u>
+            <ul class="features">
+                <li>A rendering engine which:
+                    <ul>
+                        <li>Plots images on a map</li>
+                        <li>Draws polylines using OSMnx network graphs to approximate routes traveled</li>
+                        <li>Iteratively measures distance between coordinates</li>
+                    </ul>
+                </li>
+                <li>Interactive Folium map</li>
+                <li>Dashboard that displays buttons, trips, and metrics</li>
+                <li>Thumbnail generation via Pillow to show image previews</li>
+                <li>Cache that encodes graph data in binary for efficient plotting</li>
+            </ul>
             <br>
 
         </p>
-        <p>
+        <p style="margin-top: -2%">
             <br>
             This project has been heavily inspired by my experience reading <i>The Innocents Abroad</i> by Mark Twain.
-            <br>
             The humorous, often abstract writings about his adventures around Europe and the Middle East reminded me 
             of how, for a large portion of history, travel was only about self-fulfillment. 
             <br>
-            There was no subconscious intention to make a post on social media for validation of your lifestyle. 
-            Furthermore, there was no real need to have our images, locations, and thoughts stored in some 
-            far off cloud service, where they are treated as sellable data and nothing more.
+            There was no real need to have our images, locations, and thoughts stored in some 
+            far off cloud service, where they are treated as sellable data and nothing more. That was pretty cool.
         </p>
         <br>
         <p>
