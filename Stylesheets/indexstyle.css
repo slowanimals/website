@@ -113,9 +113,9 @@ Also use position: absolute to place folders anywhere */
     opacity: 0.6;
 }
 .icon .name{
-    /* display: inline-block; */
+    display: inline-block;
     margin: 0;
-    color:black !important;
+    color:black;
     font-family: "VT323";
     /* text-align: center; */
 }
@@ -363,8 +363,8 @@ Also use position: absolute to place folders anywhere */
         border: none;
     }
     #namecont{
-        justify-self: center !important;
-        /* justify-items: center !important; */
+        justify-self: center;
+        justify-items: center !important;
         margin-top: -6%;
         border: none;
         font-size: 4.5vw;
