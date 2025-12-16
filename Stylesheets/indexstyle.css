@@ -165,7 +165,7 @@ Also use position: absolute to place folders anywhere */
 /*BAR*/
 
 .bar{
-    height: 50px;
+    height: 6.6vh;
     width: 100%;
     background-color:coral;
     position: fixed;
@@ -182,7 +182,7 @@ Also use position: absolute to place folders anywhere */
 }
 .barbutton{
     font-family:'VT323';
-    font-size: 30px;
+    font-size: 2vw;
     text-align: center;
 
     top: 5px;
@@ -214,22 +214,41 @@ Also use position: absolute to place folders anywhere */
 
 #start{
     position:absolute;
-    left: 10px;
-    width: 120px;
+    /* align-self: center; */
+    justify-self: center;
+    left: 1vw;
+    width: 8vw;
+    text-align: center;
+    font-size: 2.3vw;
 }
 
-#ld{
+.barlinks{
+    justify-self: left;
+    /* border: 2px black solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    /* width: 20vw; */
+    gap: 10%;
     position: absolute;
-    left: 145px;
-    
+    left: 10vw;
+}
+#ld{
     background-color:white;
-    padding: 5px;
-    top: 2px;
-    bottom: 3px;
+    padding: 5%; 
+    /* top: 2px; */
+    /* bottom: 3px; */
+    height: 90%;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
 }
 #ld img{
-    height: 35px;
-    bottom: 2px;
+    height: 4.5vh;
+    bottom: 1vw;
+    align-self: center;
 }
 #ld img:active{
     opacity:0.5;
@@ -240,17 +259,14 @@ Also use position: absolute to place folders anywhere */
 }
 
 #spot{
-    position: absolute;
-    left: 255px;
-
-    padding: 5px;
-    top: 2px;
-    bottom: 3px;
+    padding: 5%;
+    height: 90%;
     background-color: rgb(96, 94, 94);
 }
 #spot img{
-    height: 35px;
-    bottom: 2px;
+    height: 4.5vh;
+    bottom: 1vw;
+    align-self: center;
 }
 #spot img:active{
     opacity:0.5;
@@ -261,19 +277,16 @@ Also use position: absolute to place folders anywhere */
 }
 
 #insta{
-    position: absolute;
-    left: 200px;
-
-    padding: 5px;
-    top: 2px;
-    bottom: 3px;
+    padding: 5%;
+    height: 90%;
     background-color: rgb(202, 171, 112);
 }
 #insta img{
-    height: 35px;
-    bottom: 2px;
-    margin-right: 1px;
-    margin-bottom: 2px;
+    height: 4.5vh;
+    bottom: 1vw;
+    align-self: center;
+    /* margin-right: 1px;
+    margin-bottom: 2px; */
 }
 #insta img:active{
     opacity: 0.5;
@@ -426,12 +439,12 @@ Also use position: absolute to place folders anywhere */
     }
     #abcont{
         position: absolute;
-        top: 50%;
-        right: 17%;
+        top: 60%;
+        right: 14%;
     }
     #gitcont{
         position: absolute;
-        top: 40%;
+        top: 45%;
         left: 15%;
     }
 
@@ -439,14 +452,13 @@ Also use position: absolute to place folders anywhere */
     /*BAR*/
     
     .bar{
-        height: 50px;
+        height: 6.6vh;
         width: 100%;
         background-color:coral;
         position: fixed;
         bottom: 0;
         margin-left: 0;
         margin-right: 0;
-        margin-top: 0;
         border-top: 1px solid;
         border-bottom: 2px solid;
         border-top-color:brown;
@@ -457,7 +469,7 @@ Also use position: absolute to place folders anywhere */
     }
     .barbutton{
         font-family:'VT323';
-        font-size: 30px;
+        font-size: 2vw;
         text-align: center;
 
         top: 5px;
@@ -489,23 +501,43 @@ Also use position: absolute to place folders anywhere */
 
     #start{
         position:absolute;
-        left: 10px;
-        width: 120px;
-        color: black !important;
+        /* align-self: center; */
+        justify-self: center;
+        /* left: 1vw; */
+        width: 25vw;
+        text-align: center;
+        font-size: 7vw;
+        left: 10vw;
+        display: none;
     }
 
+    .barlinks{
+        justify-self: center;
+        /* border: 2px black solid; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        /* width: 20vw; */
+        gap: 10%;
+        /* position: absolute; */
+        left: 25.5vw;
+    }
     #ld{
-        position: absolute;
-        left: 145px;
-        
         background-color:white;
-        padding: 5px;
-        top: 2px;
-        bottom: 3px;
+        padding: 5%; 
+        /* top: 2px; */
+        /* bottom: 3px; */
+        height: 90%;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
     }
     #ld img{
-        height: 35px;
-        bottom: 2px;
+        height: 4.5vh;
+        bottom: 1vw;
+        align-self: center;
     }
     #ld img:active{
         opacity:0.5;
@@ -516,17 +548,14 @@ Also use position: absolute to place folders anywhere */
     }
 
     #spot{
-        position: absolute;
-        left: 255px;
-
-        padding: 5px;
-        top: 2px;
-        bottom: 3px;
+        padding: 5%;
+        height: 90%;
         background-color: rgb(96, 94, 94);
     }
     #spot img{
-        height: 35px;
-        bottom: 2px;
+        height: 4.5vh;
+        bottom: 1vw;
+        align-self: center;
     }
     #spot img:active{
         opacity:0.5;
@@ -537,19 +566,16 @@ Also use position: absolute to place folders anywhere */
     }
 
     #insta{
-        position: absolute;
-        left: 200px;
-
-        padding: 5px;
-        top: 2px;
-        bottom: 3px;
+        padding: 5%;
+        height: 90%;
         background-color: rgb(202, 171, 112);
     }
     #insta img{
-        height: 35px;
-        bottom: 2px;
-        margin-right: 1px;
-        margin-bottom: 2px;
+        height: 4.5vh;
+        bottom: 1vw;
+        align-self: center;
+        /* margin-right: 1px;
+        margin-bottom: 2px; */
     }
     #insta img:active{
         opacity: 0.5;
