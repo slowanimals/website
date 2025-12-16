@@ -452,7 +452,7 @@ Also use position: absolute to place folders anywhere */
     /*BAR*/
     
     .bar{
-        height: 6.6vh;
+        height: 8vh;
         width: 100%;
         background-color:coral;
         position: fixed;
@@ -466,6 +466,11 @@ Also use position: absolute to place folders anywhere */
         
         padding-left: 10;
         padding-right: 10;
+
+        display: flex;
+        justify-content: center;
+        /* justify-items: center; */
+        align-items: center;
     }
     .barbutton{
         font-family:'VT323';
@@ -500,43 +505,43 @@ Also use position: absolute to place folders anywhere */
     }
 
     #start{
-        position:absolute;
+        /* position:absolute; */
         /* align-self: center; */
-        justify-self: center;
+        /* justify-self: center; */
         /* left: 1vw; */
-        width: 25vw;
+        /* width: 25vw;
         text-align: center;
         font-size: 7vw;
-        left: 10vw;
+        left: 10vw; */
         display: none;
     }
 
     .barlinks{
-        justify-self: center;
+        /* position: relative; */
         /* border: 2px black solid; */
+        /* left: 25vw; */
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-items: center;
-        height: 100%;
-        /* width: 20vw; */
+        left: 23vw;
+        height: 90%;
         gap: 10%;
-        /* position: absolute; */
-        left: 25.5vw;
+        
     }
     #ld{
         background-color:white;
         padding: 5%; 
         /* top: 2px; */
         /* bottom: 3px; */
-        height: 90%;
+        height: 95%;
         align-self: center;
         align-content: center;
         justify-content: center;
     }
     #ld img{
-        height: 4.5vh;
-        bottom: 1vw;
+        height: 5vh;
+        width: 5vh;
         align-self: center;
     }
     #ld img:active{
@@ -549,12 +554,12 @@ Also use position: absolute to place folders anywhere */
 
     #spot{
         padding: 5%;
-        height: 90%;
+        height: 95%;
         background-color: rgb(96, 94, 94);
     }
     #spot img{
-        height: 4.5vh;
-        bottom: 1vw;
+        height: 5vh;
+        width: 5vh;
         align-self: center;
     }
     #spot img:active{
@@ -567,12 +572,12 @@ Also use position: absolute to place folders anywhere */
 
     #insta{
         padding: 5%;
-        height: 90%;
+        height: 95%;
         background-color: rgb(202, 171, 112);
     }
     #insta img{
-        height: 4.5vh;
-        bottom: 1vw;
+        height: 5vh;
+        width: 5vh;
         align-self: center;
         /* margin-right: 1px;
         margin-bottom: 2px; */
