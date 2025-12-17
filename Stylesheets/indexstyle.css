@@ -529,7 +529,7 @@ Also use position: absolute to place folders anywhere */
         justify-content: center;
         height: 90%;
         gap: 3vw;
-        left: 29vw;
+        left: 25vw;
         /* width: auto; */
         /* position: absolute; */
 
@@ -539,8 +539,10 @@ Also use position: absolute to place folders anywhere */
         /* padding: 5%;  */
         /* top: 2px; */
         /* bottom: 3px; */
-        height: 5vh !important;
-        width: auto !important;
+        height: 5vh;
+        max-height: 5vh;
+
+        /* width: auto !important; */
 
         display: flex;
         align-self: center;
