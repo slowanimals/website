@@ -536,8 +536,7 @@ Also use position: absolute to place folders anywhere */
         padding: 5%; 
         /* top: 2px; */
         /* bottom: 3px; */
-        height: 75%;
-        width: 15vw;
+        height: 5vh;
         align-self: center;
         align-content: center;
         justify-content: center;
@@ -557,8 +556,7 @@ Also use position: absolute to place folders anywhere */
 
     #spot{
         padding: 5%;
-        height: 75%;
-        width: 15vw;
+        height: 5vh;
         background-color: rgb(96, 94, 94);
     }
     #spot img{
@@ -576,8 +574,7 @@ Also use position: absolute to place folders anywhere */
 
     #insta{
         padding: 5%;
-        height: 75%;
-        width: 15vw;
+        height: 5vh;
         background-color: rgb(202, 171, 112);
     }
     #insta img{
