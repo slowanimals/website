@@ -470,7 +470,7 @@ Also use position: absolute to place folders anywhere */
 
         display: flex;
         justify-content: center;
-        /* justify-items: center; */
+        justify-items: center;
         align-items: center;
     }
     .barbutton{
@@ -490,6 +490,8 @@ Also use position: absolute to place folders anywhere */
         
         box-shadow: 2px 2px rgb(89, 20, 20), -2px -2px inset rgb(132, 88, 88), 2px 2px inset rgb(241, 162, 162);
         background-color: coral;
+
+        -webkit-tap-highlight-color: transparent;
 
     }
 
@@ -524,11 +526,11 @@ Also use position: absolute to place folders anywhere */
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-items: center;
-        height: 80%;
-        gap: 10%;
-        left: 21vw;
-        width: auto;
+        justify-content: center;
+        height: 90%;
+        gap: 3vw;
+        left: 29vw;
+        /* width: auto; */
         /* position: absolute; */
 
     }
@@ -558,7 +560,7 @@ Also use position: absolute to place folders anywhere */
         opacity:0.5;
     }
     #ld:active{
-        /* box-shadow: 2px 2px rgb(67, 66, 66) inset, -2px -2px gray inset; */
+        box-shadow: 2px 2px rgb(67, 66, 66) inset, -2px -2px gray inset;
         background-color:white;
     }
 
@@ -576,7 +578,7 @@ Also use position: absolute to place folders anywhere */
         opacity:0.5;
     }
     #spot:active{
-        /* box-shadow: 2px 2px rgb(28, 27, 27) inset, -2px -2px rgb(66, 66, 66) inset; */
+        box-shadow: 2px 2px rgb(28, 27, 27) inset, -2px -2px rgb(66, 66, 66) inset;
         background-color: rgb(96, 94, 94);
     }
 
@@ -596,7 +598,7 @@ Also use position: absolute to place folders anywhere */
         opacity: 0.5;
     }
     #insta:active{
-        /* box-shadow: 2px 2px rgb(65, 49, 36) inset, -2px -2px rgb(112, 83, 70) inset; */
+        box-shadow: 2px 2px rgb(65, 49, 36) inset, -2px -2px rgb(112, 83, 70) inset;
         background-color:rgb(131, 106, 63);
     }
 }
