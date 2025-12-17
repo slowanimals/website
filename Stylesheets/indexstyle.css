@@ -453,9 +453,10 @@ Also use position: absolute to place folders anywhere */
     
     .bar{
         height: 8vh;
+        min-height: 50px;
         width: 100%;
         background-color:coral;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         margin-left: 0;
         margin-right: 0;
@@ -527,23 +528,26 @@ Also use position: absolute to place folders anywhere */
         height: 80%;
         gap: 10%;
         left: 21vw;
-        width: fit-content;
-        position: absolute;
+        width: auto;
+        /* position: absolute; */
 
     }
-    #ld{
+    #ld, #spot, #insta{
         background-color:white;
         padding: 5%; 
         /* top: 2px; */
         /* bottom: 3px; */
         height: 5vh;
+
+        display: flex;
         align-self: center;
         align-content: center;
         justify-content: center;
+        /* box-sizing: border-box; */
     }
-    #ld img{
+    #ld img, #spot img, #insta img{
         height: 5vh;
-        width: 5vh;
+        width: auto;
         align-self: center;
     }
     #ld img:active{
@@ -561,7 +565,7 @@ Also use position: absolute to place folders anywhere */
     }
     #spot img{
         height: 5vh;
-        width: 5vh;
+        width: auto;
         align-self: center;
     }
     #spot img:active{
