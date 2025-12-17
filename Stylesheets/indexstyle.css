@@ -455,7 +455,7 @@ Also use position: absolute to place folders anywhere */
         height: 8vh;
         width: 100%;
         background-color:coral;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         margin-left: 0;
         margin-right: 0;
@@ -524,10 +524,12 @@ Also use position: absolute to place folders anywhere */
         flex-direction: row;
         align-items: center;
         justify-items: center;
-        height: 90%;
+        height: 80%;
         gap: 10%;
         left: 21vw;
         width: fit-content;
+        position: absolute;
+
     }
     #ld{
         background-color:white;
