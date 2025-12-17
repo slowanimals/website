@@ -537,24 +537,28 @@ Also use position: absolute to place folders anywhere */
         /* padding: 5%;  */
         /* top: 2px; */
         /* bottom: 3px; */
-        height: 5vh;
+        height: 5vh !important;
+        width: auto !important;
 
         display: flex;
         align-self: center;
         align-content: center;
         justify-content: center;
         /* box-sizing: border-box; */
+
+        transition: none;
     }
     #ld img, #spot img, #insta img{
         height: 5vh;
         width: auto;
         align-self: center;
+        object-fit: contain;
     }
     #ld img:active{
         opacity:0.5;
     }
     #ld:active{
-        box-shadow: 2px 2px rgb(67, 66, 66) inset, -2px -2px gray inset;
+        /* box-shadow: 2px 2px rgb(67, 66, 66) inset, -2px -2px gray inset; */
         background-color:white;
     }
 
@@ -572,7 +576,7 @@ Also use position: absolute to place folders anywhere */
         opacity:0.5;
     }
     #spot:active{
-        box-shadow: 2px 2px rgb(28, 27, 27) inset, -2px -2px rgb(66, 66, 66) inset;
+        /* box-shadow: 2px 2px rgb(28, 27, 27) inset, -2px -2px rgb(66, 66, 66) inset; */
         background-color: rgb(96, 94, 94);
     }
 
@@ -592,7 +596,7 @@ Also use position: absolute to place folders anywhere */
         opacity: 0.5;
     }
     #insta:active{
-        box-shadow: 2px 2px rgb(65, 49, 36) inset, -2px -2px rgb(112, 83, 70) inset;
+        /* box-shadow: 2px 2px rgb(65, 49, 36) inset, -2px -2px rgb(112, 83, 70) inset; */
         background-color:rgb(131, 106, 63);
     }
 }
