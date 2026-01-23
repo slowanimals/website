@@ -1,5 +1,10 @@
 body{
     margin:0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 a{
     text-decoration: 0;
@@ -33,18 +38,22 @@ p{
 /*INFO*/
 .info{
     width:40vw;
-    justify-self: center;
-    justify-items: center;
+    justify-content: center;
+    align-content: center;
     text-align: center;
 
     font-family: 'vt323';
     font-size: 1.5vw;
 
     border: 0px solid black;
-    position: absolute;
-    top: 3vh;
-    margin-left: 4vw;
     user-select: none;
+    margin-top: 5vh;
+    width: 100%;
+}
+.info p{
+    text-align: center;
+    width: 100%;
+    margin-left: 3.8vw;
 }
 
 
@@ -61,6 +70,7 @@ p{
 
     position: absolute;
     justify-self: center;
+    align-self: center;
     top: 9vh;
 }
 .timeline_component{
@@ -330,4 +340,188 @@ p{
 
     font-size: 23px;
     padding-bottom: 5px;
+}
+
+
+@media (max-width: 500px){
+
+    .info{
+    width:100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    font-family: 'vt323';
+    font-size: 4vw;
+
+    border: 0px solid black;
+    user-select: none;
+    margin-top: 5vh;
+    width: 100%;
+    }
+    .info p{
+        text-align: center;
+        width: 100%;
+        margin-left: 10vw;
+    }
+
+    /*PROJECTS*/
+    .timeline{
+        height: 100%;
+        width: 90vw;
+    }
+    .timeline_component{
+        margin: 0 20px 0 20px;
+    }
+
+    .date{
+        font-size: 4vw;
+        padding-right: 2vw;
+        padding-left: 0vw;
+        font-weight:600;
+        user-select: none;
+        margin-top: -0.4vh;
+    }
+    .date:hover{
+        cursor: pointer;
+        font-weight: 900;
+    }
+
+    .date-right{
+        text-align: right;
+    }
+    .date-left{
+        text-align: left;
+    }
+
+
+    .middle{
+        position: relative;
+        background: blue;
+    }
+    .middle:hover{
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+
+    .point{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 4vw;
+        height: 4vw;
+        transform: translateX(-50%);
+        border: 3px solid blue;
+    }
+    .point:hover{
+        cursor: pointer;
+        background: blue;
+    }
+
+    #prog{
+        background: gold;
+    }
+    #done{
+        background: rgb(0, 235, 0);
+    }
+    #patch{
+        background: lightblue;
+    }
+
+    .timeline_desc{
+        border: 0px solid black;
+        margin-bottom: 2.5vh;
+        padding-bottom: 2vh;
+        font-size: 3vw;
+        border-bottom: 0px solid gray;
+        width: auto;
+        justify-self: stretch;
+        justify-content: center;
+        align-content: center;
+    }
+    .timeline_desc img{
+        width: 16vw;
+        height: auto;
+        display: block;
+        align-self: center;
+    }
+    .timeline_desc img:hover{
+        animation: pulse 2s ease-in-out;
+    }
+    .timeline_desc p{
+        padding: 0 0 1vh 1vh;
+    }
+
+    .timeline_desc a{
+        padding: 1% 0 3% 0;
+        font-size: 3vw;
+        color: blue;
+    }
+    .timeline_desc a:hover{
+        color: rgb(117, 149, 254);
+    }
+
+
+    #desc-right{
+        grid-column: 3;
+        padding-left: 2.5vw;
+        padding-right: 1vw;
+        margin: -1vh 0 1.5vh 0;
+        align-content: left;
+        justify-self: left;
+    }
+    #desc-left{
+        grid-column: 1;
+        padding-left: 1vw;
+        padding-right: 0vw;
+        margin: -4.2vh -6vw 2vh 0;
+        align-items: right;
+        justify-self: right;
+        text-align: right;
+    }
+
+
+
+    /*custom box stuff*/
+    #website{
+        font-family: 'Coral Pixels';
+        padding: 0;
+        /* margin-right: 10vw; */
+        font-size: 7vw;
+        user-select: none;
+        padding-left: 0;
+        margin-top: -7.5vh;
+        padding-right: 1vw;
+        text-align: center;
+    }
+    #website p{
+        text-align: left;
+        padding-left: 10vw;
+    }
+    #webcont{
+        padding-right: 2vh;
+        text-align: right;
+        width: 105%;
+        margin: 0;
+    }
+
+    #website:hover{
+        cursor: pointer;
+        animation: pulse 2s ease-in-out;
+    }
+    #nomadlogo{
+        font-family: 'Jacquard 12';
+        color: rgb(0, 0, 0);
+        font-size: 14vw;
+        padding: 0;
+        margin-bottom: -5%;
+        margin-left: 1vw;
+    }
+    #nomadlogo:hover{
+        cursor: pointer;
+        animation: pulse 2s ease-in-out;
+    }
+
+
+    
 }
