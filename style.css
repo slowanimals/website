@@ -54,5 +54,10 @@ a{
     }
 }
 
-
-
+@font-face{
+    font-family: 'bios';
+    src: url('assets/bios.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

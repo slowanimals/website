@@ -1,5 +1,9 @@
 body{
     margin:0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 a{
     text-decoration: 0;
@@ -24,14 +28,97 @@ a{
     height: 90vh;
 }
 
+.rescont{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    align-content: center;
+    position: relative;
+    height: 95vh;
+    width: 95vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    overflow-y: scroll;
+    padding-bottom: 2vh;
+}
 
-/*RESUME*/
+.name{
+    /* align-content: center; */
+    border-bottom: 1px white solid;
+    padding-top: 5vh;
+    height: fit-content;
+    width: 100%;
+    position: sticky;
+}
+.name p{
+    font-family: 'w95';
+    color: white;
+    font-size: 4.5vw;
+    /* font-weight: bold; */
+    text-align: left;
+    margin: 0;
+    padding-left: 1%;
+
+}
+
+.category{
+    border-bottom: 1px white solid;
+    padding-top: 5vh;
+    height: fit-content;
+    width: 90%;
+}
+.category p{
+    font-family: 'w95';
+    color: white;
+    font-size: 2.3vw;
+    /* font-weight: bold; */
+    text-align: left;
+    margin: 0;
+    padding-left: 1%;
+}
+
+.title{
+    font-family: 'w95';
+    color: white;
+    font-size: 1.5vw;
+    margin: 0.7% 0 0 0.5%;
+}
+.member{
+    font-family: w95;
+    color: white;
+    font-size: 1.2vw;
+    margin: 0.3% 0 0 2%;
+}
+
+#child{
+    margin: 0.4% 0.3% 0 4%;
+}
+
+/*icons:
+▶
+▷
+▸
+▹
+*/
+
+
+
+/* RESUME
 .resume{
     position: absolute;
     top: 25px;
     bottom: 25px;
     justify-self: center;
-}
+} */
+
+
 .resume:hover{
     cursor:none;
+}
+@font-face{
+    font-family: 'w95';
+    src: url('/assets/w95font/W95font.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
