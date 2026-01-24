@@ -136,7 +136,7 @@ a{
         align-content: center;
         position: relative;
         height: 90vh;
-        width: 95vw;
+        width: 100vw;
         margin-top: 7.5vh;
         overflow-y: scroll;
         padding-bottom: 2vh;
@@ -166,6 +166,7 @@ a{
         padding-top: 4vh;
         height: fit-content;
         width: 90%;
+        padding-left: 0.5vh;
     }
     .category p{
         font-family: 'w95';
