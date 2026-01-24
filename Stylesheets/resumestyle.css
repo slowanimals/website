@@ -97,6 +97,116 @@ a{
     padding-top: 4vh;
 }
 
+
+@media (max-width: 500px){
+    body{
+        margin:0;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: bottom;
+    }
+    a{
+        text-decoration: 0;
+        display: inline-block;
+        color: black;
+    }
+    .container{
+        border: 3px solid black;
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+        
+    }
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+        position: relative;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .rescont{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        position: relative;
+        height: 90vh;
+        width: 95vw;
+        margin-top: 7.5vh;
+        overflow-y: scroll;
+        padding-bottom: 2vh;
+    }
+
+    .name{
+        /* align-content: center; */
+        border-bottom: 1px white solid;
+        padding-top: 1.8vh;
+        height: fit-content;
+        width: 100%;
+        position: sticky;
+    }
+    .name p{
+        font-family: 'w95';
+        color: white;
+        font-size: 12vw;
+        /* font-weight: bold; */
+        text-align: left;
+        margin: 0;
+        padding-left: 1%;
+
+    }
+
+    .category{
+        border-bottom: 1px white solid;
+        padding-top: 4vh;
+        height: fit-content;
+        width: 90%;
+    }
+    .category p{
+        font-family: 'w95';
+        color: white;
+        font-size: 8vw;
+        /* font-weight: bold; */
+        text-align: left;
+        margin: 0;
+        padding-left: 1%;
+    }
+
+    .title{
+        font-family: 'w95';
+        color: white;
+        font-size: 4vw;
+        margin: 1vh 0 0 0.5%;
+    }
+    .title i{
+        font-size: 1.2vw;
+        font-size: 3vw;
+    }
+    .member{
+        font-family: 'w95';
+        color: white;
+        font-size: 3vw;
+        margin: 0.5vh 0 0 2%;
+    }
+
+    #child{
+        margin: 0.4% 0.3% 0 4%;
+    }
+
+    #edu{
+        padding-top: 4vh;
+    }
+}
+
+
+
+
+
 /*icons:
 ▶
 ▷

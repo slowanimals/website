@@ -18,6 +18,8 @@
 .directory a{
     color:gray;
 }
+
+
 .directory a:hover{
     cursor:pointer;
     font-weight:bolder;
@@ -27,4 +29,11 @@
 #resume{
     position: absolute;
     z-index: 999;
+}
+
+@media (max-width: 500px){
+    .directory{
+        font-size: 2.5vh;
+        padding-left: 1vw;
+    }
 }
