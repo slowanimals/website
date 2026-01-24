@@ -37,7 +37,7 @@ a{
     height: 90vh;
     width: 95vw;
     margin-top: 7.5vh;
-    overflow-y: scroll;
+    overflow-y:visible;
     padding-bottom: 2vh;
 }
 
