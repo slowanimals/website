@@ -4,6 +4,7 @@ body{
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    overflow-y: none;
 }
 a{
     text-decoration: 0;
@@ -63,8 +64,8 @@ a{
 
 @media (max-width: 500px){
     .biocont{
-        width: 78vw;
-        row-gap: 5vw;
+        width: 70vw;
+        row-gap: 3vw;
     }
     .biocont img{
         width: 100%;
