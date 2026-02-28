@@ -1,5 +1,9 @@
 body{
     margin:0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 }
 a{
     text-decoration: 0;
@@ -29,16 +33,13 @@ a{
 /*ABOUT*/
 .biocont{
     border: 0px solid black;
-    justify-self: center;
-    justify-content: center;
     justify-items: center;
-    position: absolute;
-    top: 1%;
-    width: 65vw;
-    height: 92vh;
+    width: 70vw;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15vh;
     gap: 0%;
 
 }
@@ -59,6 +60,22 @@ a{
     color: black;
     margin: 0;
 }
+
+@media (max-width: 500px){
+    .biocont{
+        width: 90vw;
+        row-gap: 5vw;
+    }
+    .biocont img{
+        width: 100%;
+    }
+
+    .biocont p{
+        font-size: 5vw;
+    }
+}
+
+
 
 
 /*BAR STUFF*/
