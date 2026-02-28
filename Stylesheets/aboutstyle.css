@@ -63,7 +63,7 @@ a{
 
 @media (max-width: 500px){
     .biocont{
-        width: 90vw;
+        width: 78vw;
         row-gap: 5vw;
     }
     .biocont img{
@@ -71,7 +71,7 @@ a{
     }
 
     .biocont p{
-        font-size: 5vw;
+        font-size: 6vw;
     }
 }
 
