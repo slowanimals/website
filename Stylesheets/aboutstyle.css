@@ -66,6 +66,7 @@ a{
     .biocont{
         width: 70vw;
         row-gap: 3vw;
+        margin-top: 10vh;
     }
     .biocont img{
         width: 100%;
