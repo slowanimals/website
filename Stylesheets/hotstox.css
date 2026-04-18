@@ -1,0 +1,533 @@
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+a{
+    text-decoration: 0;
+    display: inline-block;
+    color: black;
+    padding: 0;
+}
+p{
+    margin: 0;
+    width: 80%;
+}
+
+.container{
+    border: 3px solid black;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+/*INFO*/
+.info{
+    width:40vw;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    font-family: 'vt323';
+    font-size: 1.5vw;
+
+    border: 0px solid black;
+    user-select: none;
+    margin-top: 5vh;
+    width: 100%;
+}
+.info p{
+    text-align: center;
+    width: 100%;
+    margin-left: 3.8vw;
+}
+
+
+/*PROJECTS*/
+.timeline{
+    margin: 0 auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: 'VT323';
+    color: black;
+    border: 0px solid black;
+    width: 80vw;
+
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    top: 9vh;
+}
+.timeline_component{
+    margin: 0 20px 0 20px;
+}
+
+.date{
+    font-size: 2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    font-weight:600;
+    user-select: none;
+    margin-top: -0.4vh;
+}
+.date:hover{
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.date-right{
+    text-align: right;
+}
+.date-left{
+    text-align: left;
+}
+
+
+.middle{
+    position: relative;
+    background: blue;
+}
+.middle:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1.3vw;
+    height: 1.3vw;
+    transform: translateX(-50%);
+    border: 3px solid blue;
+}
+.point:hover{
+    cursor: pointer;
+    background: blue;
+}
+
+#prog{
+    background: gold;
+}
+#done{
+    background: rgb(0, 235, 0);
+}
+#patch{
+    background: lightblue;
+}
+
+.timeline_desc{
+    border: 0px solid black;
+    margin-bottom: 2.5vh;
+    padding-bottom: 2vh;
+    font-size: 1.6vw;
+    border-bottom: 0px solid gray;
+    width: auto;
+    justify-self: stretch;
+}
+.timeline_desc img{
+    width: 16vw;
+    height: auto;
+    display: block;
+}
+.timeline_desc img:hover{
+    animation: pulse 2s ease-in-out;
+}
+.timeline_desc p{
+    padding: 0 0 1vh 0;
+}
+
+.timeline_desc a{
+    padding: 1% 0 2% 0;
+    font-size: 1.9vw;
+    color: blue;
+}
+.timeline_desc a:hover{
+    color: rgb(117, 149, 254);
+}
+
+
+#desc-right{
+    grid-column: 3;
+    padding-left: 2.5vw;
+    padding-right: 1vw;
+    margin: -1vh 0 1.5vh 0;
+    align-content: left;
+    justify-self: left;
+}
+#desc-left{
+    grid-column: 1;
+    padding-left: 1vw;
+    padding-right: 0vw;
+    margin: -4.2vh -6vw 2vh 0;
+    align-items: right;
+    justify-self: right;
+    text-align: right;
+}
+
+
+
+/*custom box stuff*/
+#website{
+    font-family: 'Coral Pixels';
+    padding-bottom: 0;
+    font-size: 5vw;
+    user-select: none;
+}
+#website:hover{
+    cursor: pointer;
+    animation: pulse 2s ease-in-out;
+}
+#nomadlogo{
+    font-family: 'Jacquard 12';
+    color: rgb(0, 0, 0);
+    font-size: 8vw;
+    padding: 0;
+    margin-bottom: -5%;
+}
+#nomadlogo:hover{
+    cursor: pointer;
+    animation: pulse 2s ease-in-out;
+}
+
+/*ANIMATIONS*/
+@keyframes wobble {
+    0%{
+        transform: translateX(0px) rotate(0deg);
+    }
+    25%{
+        transform: translateX(25px) rotate(5deg);
+    }
+    50%{
+        transform: translateX(-20px) rotate(-8deg);
+    }
+    75%{
+        transform: translateX(15px) rotate(3deg);
+    }
+    100%{
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    50%{
+        transform: scale3d(1.1,1.1,1.1);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+@keyframes jiggle{
+
+    0%{
+        transform: translateX(0vw);
+    }
+    10%{
+        transform: translateX(2vw);
+    }
+    20%{
+        transform: translateX(-2vw);
+    }
+    30%{
+        transform: translateX(-2vw);
+    }
+    40%{
+        transform: translateX(2vw);
+    }
+    50%{
+        transform: translateX(2vw);
+    }
+    60%{
+        transform: translateX(-2vw);
+    }
+    70%{
+        transform: translateX(-2vw);
+    }
+    80%{
+        transform: translateX(2vw);
+    }
+    90%{
+        transform: translateX(-2vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+
+
+#link{
+    font-size: 4vw;
+    font-size: 1.6vw;
+    padding: 0;
+    color: blue;
+}
+#link:hover{
+    color: rgb(117, 149, 254);
+    cursor: pointer;
+}
+
+
+
+
+/*HOTSTOX EMBED*/
+.hotstox{
+    height: 72.2%;
+    border: 1px solid gray;
+    border-radius: 13px;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    width: 65vw;
+    margin-top: 5vh;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.hotstox iframe{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    align-self: center;
+}
+
+.hsdesc{
+    font-family:"vt323";
+    font-size: 2.5vw;
+    padding:0;
+    border: 0px solid green;
+    width: fit-content;
+    justify-self: center;
+    margin-top: 3vh;
+}
+
+
+/*REPO*/
+.repo{
+    text-align: center;
+}
+.repo a{
+    font-family:"vt323";
+    font-size: 2.5vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:0;
+    color:rgb(102, 102, 251);
+}
+.repo a:hover{
+    color:rgb(148, 148, 243);
+}
+
+.created{
+    font-family: "vt323";
+    color: rgb(120, 189, 141);
+    text-align: center;
+
+    font-size: 23px;
+    padding-bottom: 5px;
+}
+
+
+@media (max-width: 500px){
+
+    .info{
+    width:100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    font-family: 'vt323';
+    font-size: 4vw;
+
+    border: 0px solid black;
+    user-select: none;
+    margin-top: 5vh;
+    width: 100%;
+    }
+    .info p{
+        text-align: center;
+        width: 100%;
+        margin-left: 10vw;
+    }
+
+    /*PROJECTS*/
+    .timeline{
+        height: 100%;
+        width: 90vw;
+    }
+    .timeline_component{
+        margin: 0 20px 0 20px;
+    }
+
+    .date{
+        font-size: 4vw;
+        padding-right: 2vw;
+        padding-left: 0vw;
+        font-weight:600;
+        user-select: none;
+        margin-top: -0.4vh;
+    }
+    .date:hover{
+        cursor: pointer;
+        font-weight: 900;
+    }
+
+    .date-right{
+        text-align: right;
+    }
+    .date-left{
+        text-align: left;
+    }
+
+
+    .middle{
+        position: relative;
+        background: blue;
+    }
+    .middle:hover{
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+
+    .point{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 4vw;
+        height: 4vw;
+        transform: translateX(-50%);
+        border: 3px solid blue;
+    }
+    .point:hover{
+        cursor: pointer;
+        background: blue;
+    }
+
+    #prog{
+        background: gold;
+    }
+    #done{
+        background: rgb(0, 235, 0);
+    }
+    #patch{
+        background: lightblue;
+    }
+
+    .timeline_desc{
+        border: 0px solid black;
+        margin-bottom: 2.5vh;
+        padding-bottom: 2vh;
+        font-size: 3vw;
+        border-bottom: 0px solid gray;
+        width: auto;
+        justify-self: stretch;
+        justify-content: center;
+        align-content: center;
+    }
+    .timeline_desc img{
+        width: 16vw;
+        height: auto;
+        display: block;
+        align-self: center;
+    }
+    .timeline_desc img:hover{
+        animation: pulse 2s ease-in-out;
+    }
+    .timeline_desc p{
+        padding: 0 0 1vh 1vh;
+    }
+
+    .timeline_desc a{
+        padding: 1% 0 3% 0;
+        font-size: 3vw;
+        color: blue;
+    }
+    .timeline_desc a:hover{
+        color: rgb(117, 149, 254);
+    }
+
+
+    #desc-right{
+        grid-column: 3;
+        padding-left: 2.5vw;
+        padding-right: 1vw;
+        margin: -1vh 0 1.5vh 0;
+        align-content: left;
+        justify-self: left;
+    }
+    #desc-left{
+        grid-column: 1;
+        padding-left: 1vw;
+        padding-right: 0vw;
+        margin: -4.2vh -6vw 2vh 0;
+        align-items: right;
+        justify-self: right;
+        text-align: right;
+    }
+
+
+
+    /*custom box stuff*/
+    #website{
+        font-family: 'Coral Pixels';
+        padding: 0;
+        /* margin-right: 10vw; */
+        font-size: 7vw;
+        user-select: none;
+        padding-left: 0;
+        margin-top: -7.5vh;
+        padding-right: 1vw;
+        text-align: center;
+    }
+    #website p{
+        text-align: left;
+        padding-left: 10vw;
+    }
+    #webcont{
+        padding-right: 2vh;
+        text-align: right;
+        width: 105%;
+        margin: 0;
+    }
+
+    #website:hover{
+        cursor: pointer;
+        animation: pulse 2s ease-in-out;
+    }
+    #nomadlogo{
+        font-family: 'Jacquard 12';
+        color: rgb(0, 0, 0);
+        font-size: 14vw;
+        padding: 0;
+        margin-bottom: -5%;
+        margin-left: 1vw;
+    }
+    #nomadlogo:hover{
+        cursor: pointer;
+        animation: pulse 2s ease-in-out;
+    }
+
+
+    
+}
