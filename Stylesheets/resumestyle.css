@@ -1,10 +1,22 @@
 body{
-    margin:0;
+    margin-top:-2vh;
     background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: bottom;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    height: 90vh;
+    width: 95vw;
+    /* margin-top: 7.5vh; */
+    overflow-y:visible;
+    padding-bottom: 35vh;
+    /* margin-bottom: 6vh; */
+    padding-top: 37vh;
 }
 a{
     text-decoration: 0;
@@ -30,7 +42,7 @@ a{
 }
 
 .rescont{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-content: center;
     position: relative;
@@ -39,7 +51,9 @@ a{
     margin-top: 7.5vh;
     overflow-y:visible;
     padding-bottom: 2vh;
-    margin-bottom: 6vh;
+    margin-bottom: 6vh; */
+
+    margin-left: 3vh;
 }
 
 .name{
@@ -103,10 +117,22 @@ a{
     body{
         margin:0;
         background-color: black;
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* justify-content: center; */
+        /* align-content: bottom; */
+        
+
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: bottom;
+        flex-direction: column;
+        align-content: center;
+        position: relative;
+        height: 90vh;
+        width: 100vw;
+        margin-top: -1vh;
+        overflow-y: scroll;
+        padding-top: 25vh;
+        padding-bottom: 30vh;
     }
     a{
         text-decoration: 0;
@@ -132,7 +158,7 @@ a{
     }
 
     .rescont{
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         align-content: center;
         position: relative;
@@ -140,7 +166,8 @@ a{
         width: 100vw;
         margin-top: 7.5vh;
         overflow-y: scroll;
-        padding-bottom: 2vh;
+        padding-bottom: 2vh; */
+        margin-left: 1vh;
     }
 
     .name{
