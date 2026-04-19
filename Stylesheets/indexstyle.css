@@ -467,8 +467,8 @@ Also use position: absolute to place folders anywhere */
         
         padding-left: 10;
         padding-right: 10;
-
-        display: flex;
+        /* gonna hide the bar on mobile until it actually works.... */
+        display: None;
         justify-content: center;
         justify-items: center;
         align-items: center;
