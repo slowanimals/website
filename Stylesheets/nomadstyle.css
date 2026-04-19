@@ -104,7 +104,7 @@ body{
         flex-direction: column;
         row-gap: 3vh;
         align-content: center;
-        padding-bottom: 50vh;
+        padding-bottom: 60vh;
     }
     /* left is top */
     .left{
