@@ -239,7 +239,7 @@ body{
     }
     .moon{
         position: absolute;
-        top: 18%;
+        top: 22%;
         height: 50%;
     }
     .message{
@@ -253,7 +253,7 @@ body{
 
     .orbit-container{
         height: 100%;
-        top: -57%;
+        top: -53%;
     }
     @keyframes orbit{
         0%{
@@ -286,7 +286,7 @@ body{
         width: 50%;
     }
     .bluestars{
-        justify-self: center;
+        justify-self: bottom;
     }
     .bluestars img{
         height: 100%;
