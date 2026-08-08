@@ -238,10 +238,12 @@ body{
         /* border: 1px orange solid; */
     }
     .moon{
-        height: 90%;
+        position: absolute;
+        top: 20%;
+        height: 50%;
     }
     .message{
-        font-size: 0.8em;
+        font-size: 0.5em;
         /* padding: 50%; */
         width: 80%;
         /* height: 80%; */
@@ -255,10 +257,10 @@ body{
     }
     @keyframes orbit{
         0%{
-            transform: rotate(0deg) translate(240px) rotate(0deg);
+            transform: rotate(0deg) translate(210px) rotate(0deg);
         }
         100%{
-            transform: rotate(360deg) translate(240px) rotate(-360deg);
+            transform: rotate(360deg) translate(210px) rotate(-360deg);
         }
     }
 
