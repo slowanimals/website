@@ -146,8 +146,9 @@ body{
         padding: 5%;
     }
     .message{
-        font-size: 0.6em;
-        padding: 15%;
+        font-size: 0.4em;
+        padding: 50%;
+        width: 20%;
     }
     .stars{
         height: 1vh;
