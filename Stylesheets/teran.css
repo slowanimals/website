@@ -140,9 +140,10 @@ body{
         justify-content: center;
     }
     .msg-class{
-        width: 65vw;
+        width: 80vw;
         /* height: 40%; */
         margin-top: 5%;
+        padding: 5%;
     }
     .message{
         font-size: 0.6em;
