@@ -239,7 +239,7 @@ body{
     }
     .moon{
         position: absolute;
-        top: 20%;
+        top: 18%;
         height: 50%;
     }
     .message{
@@ -257,23 +257,23 @@ body{
     }
     @keyframes orbit{
         0%{
-            transform: rotate(0deg) translate(210px) rotate(0deg);
+            transform: rotate(0deg) translate(200px) rotate(0deg);
         }
         100%{
-            transform: rotate(360deg) translate(210px) rotate(-360deg);
+            transform: rotate(360deg) translate(200px) rotate(-360deg);
         }
     }
 
     #size1 img{
-        width: 70px;
+        width: 60px;
         height: auto;
     }
     #size2 img{
-        width: 150px;
+        width: 140px;
         height: auto;
     }
     #size3 img{
-        width: 120px;
+        width: 110px;
         height: auto;
     }
     #size4 img{
