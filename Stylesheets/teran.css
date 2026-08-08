@@ -1,0 +1,172 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    /* border: 2px solid blue; */
+
+    align-self: center;
+    justify-self: center;
+
+    background-image: url(/assets/tbday/galaxy2.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.msg-class{
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    align-items: top;
+    justify-content: center;
+
+    width: min(85vw, 540px);
+
+    aspect-ratio: 1/1;
+    padding: 0;
+    background-color: rgb(76, 225, 103);
+
+
+    box-shadow: 0px 0px 60px 20px rgba(27, 112, 43, 0.577);
+
+    /* z-index: 1000; */
+    position: absolute;
+}
+
+.message{
+    /* border: 1px black solid; */
+
+    height: 50%;
+    padding: 20%;
+
+    font-family:"IBM Plex Serif";
+    font-size: 1em;
+
+    height: auto;
+    width: auto;
+
+}
+
+.dear{
+    margin-top: 0;
+}
+.end{
+    margin-bottom: 0;
+}
+
+@keyframes orbit{
+    0%{
+        transform: rotate(0deg) translate(340px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(340px) rotate(-360deg);
+    }
+}
+
+.orbiting-gif{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 80px;
+    right: 80px;
+    transform: translate(-50%, -50%);
+
+    margin-top: -50px;
+    margin-bottom: -50px;
+
+    animation: orbit 10s linear infinite;
+    justify-self: center;
+    align-self: center;
+    position: fixed;
+
+}
+
+
+.orbit-container .orbiting-gif:nth-child(1) {animation-delay: 0s;}
+.orbit-container .orbiting-gif:nth-child(2) {animation-delay: -1.11s;}
+.orbit-container .orbiting-gif:nth-child(3) {animation-delay: -2.22s;}
+.orbit-container .orbiting-gif:nth-child(4) {animation-delay: -3.33s;}
+.orbit-container .orbiting-gif:nth-child(5) {animation-delay: -4.44s;}
+.orbit-container .orbiting-gif:nth-child(6) {animation-delay: -5.55s;}
+.orbit-container .orbiting-gif:nth-child(7) {animation-delay: -6.66s;}
+.orbit-container .orbiting-gif:nth-child(8) {animation-delay: -7.77s;}
+.orbit-container .orbiting-gif:nth-child(9) {animation-delay: -8.88s;}
+
+
+#size1 img{
+    width: 100px;
+    height: auto;
+}
+#size2 img{
+    width: 170px;
+    height: auto;
+}
+#size3 img{
+    width: 150px;
+    height: auto;
+}
+#size4 img{
+    width: 70px;
+    height: auto;
+}
+
+
+.stars{
+    z-index: 0;
+    position: fixed;
+    margin-left: 75%;
+    margin-bottom: 30%;
+}
+.stars2{
+    position: fixed;
+    margin-bottom: 100%;
+}
+
+@media (max-width: 600px){
+    body{
+        /* height: auto; */
+        /* width: auto; */
+        overflow: hidden;
+        /* background-size: 100vh; */
+        align-items: center;
+        justify-content: center;
+    }
+    .msg-class{
+        width: 65vw;
+        /* height: 40%; */
+        margin-top: 5%;
+    }
+    .message{
+        font-size: 0.6em;
+        padding: 15%;
+    }
+    .stars{
+        height: 1vh;
+        margin: 0;
+    }
+
+
+    .orbit-container{
+        margin-bottom: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes orbit{
+        0%{
+            transform: rotate(0deg) translate(230px) rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg) translate(230px) rotate(-360deg);
+        }
+    }
+  
+}
+
