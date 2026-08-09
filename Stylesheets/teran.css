@@ -268,7 +268,7 @@ body{
     }
     .orbiting-gif{
         top: 50%;
-        left: 30%;
+        left: 35%;
         /* left: 80px; */
         /* right: 80px; */
         width: 50px;
@@ -286,13 +286,14 @@ body{
     .orbit-container{
         height: 100%;
         top: -54%;
+        left: -6%;
     }
     @keyframes orbit{
         0%{
-            transform: rotate(0deg) translate(205px) rotate(0deg);
+            transform: rotate(0deg) translate(210px) rotate(0deg);
         }
         100%{
-            transform: rotate(360deg) translate(205px) rotate(-360deg);
+            transform: rotate(360deg) translate(210px) rotate(-360deg);
         }
     }
 
