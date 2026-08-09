@@ -155,9 +155,7 @@ body{
     padding-bottom: 5%;
 }
 
-:root{
-    --orbit-radius: 34vh;
-}
+
 @keyframes orbit{
     0%{
         transform: rotate(0deg) translate(345px) rotate(0deg);
@@ -183,8 +181,6 @@ body{
     animation: orbit 10s linear infinite;
     justify-self: center;
     align-self: center;
-    position: fixed;
-
 
 }
 
@@ -251,7 +247,8 @@ body{
     .moon{
         position: absolute;
         top: 22%;
-        height: 50%;
+        height: 48%;
+        aspect-ratio: 1/1;
     }
     .message{
         font-size: 0.5em;
@@ -259,8 +256,22 @@ body{
         width: 80%;
         /* height: 80%; */
     }
+    .orbiting-gif{
+        top: 50%;
+        left: 28%;
+        /* left: 80px; */
+        /* right: 80px; */
+        width: 50px;
+        height: 100px;
+        transform-origin: center center;
 
+        margin-top: -50px;
+        margin-bottom: -50px;
 
+        animation: orbit 10s linear infinite;
+        justify-self: center;
+        align-self: center;
+    }
 
     .orbit-container{
         height: 100%;
