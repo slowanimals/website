@@ -17,6 +17,7 @@ body{
     overflow: hidden;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .left{
@@ -149,6 +150,9 @@ body{
     margin-bottom: 0;
 }
 
+:root{
+    --orbit-radius: 34vh;
+}
 @keyframes orbit{
     0%{
         transform: rotate(0deg) translate(340px) rotate(0deg);
@@ -159,11 +163,13 @@ body{
 }
 
 .orbiting-gif{
-    position: fixed;
-    top: 50%;
-    bottom: 50%;
-    left: 80px;
-    right: 80px;
+    position: absolute;
+    top: 47%;
+    left: 40%;
+    /* left: 80px; */
+    /* right: 80px; */
+    width: 100px;
+    height: 100px;
     transform-origin: center center;
 
     margin-top: -50px;
