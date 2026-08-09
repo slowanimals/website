@@ -247,7 +247,7 @@ body{
     .moon{
         position: absolute;
         top: 22%;
-        height: 48%;
+        height: 45%;
         aspect-ratio: 1/1;
     }
     .message{
@@ -279,10 +279,10 @@ body{
     }
     @keyframes orbit{
         0%{
-            transform: rotate(0deg) translate(200px) rotate(0deg);
+            transform: rotate(0deg) translate(220px) rotate(0deg);
         }
         100%{
-            transform: rotate(360deg) translate(200px) rotate(-360deg);
+            transform: rotate(360deg) translate(220px) rotate(-360deg);
         }
     }
 
