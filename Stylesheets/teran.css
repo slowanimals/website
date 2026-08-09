@@ -257,6 +257,14 @@ body{
         width: 90%;
         /* height: 80%; */
     }
+    #dear{
+        padding-top: 10%;
+        margin-bottom: 0;
+    }
+    #end{
+        margin-top: 0;
+        padding-bottom: 10%;
+    }
     .orbiting-gif{
         top: 50%;
         left: 28%;
