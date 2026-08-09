@@ -114,6 +114,8 @@ body{
 
     overflow: hidden;
 
+    padding: 3%;
+
     /* z-index: 1000; */
     /* position: absolute; */
 
@@ -138,6 +140,7 @@ body{
     flex-shrink: 1;
     flex-grow: 1;
 
+
 }
 .message p{
     width: 70%;
@@ -145,9 +148,11 @@ body{
 
 #dear{
     margin-top: 0;
+    padding-top: 5%;
 }
 #end{
     margin-bottom: 0;
+    padding-bottom: 5%;
 }
 
 :root{
@@ -155,10 +160,10 @@ body{
 }
 @keyframes orbit{
     0%{
-        transform: rotate(0deg) translate(340px) rotate(0deg);
+        transform: rotate(0deg) translate(345px) rotate(0deg);
     }
     100%{
-        transform: rotate(360deg) translate(340px) rotate(-360deg);
+        transform: rotate(360deg) translate(345px) rotate(-360deg);
     }
 }
 
