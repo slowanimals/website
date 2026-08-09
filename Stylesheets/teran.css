@@ -247,7 +247,7 @@ body{
     .moon{
         position: absolute;
         top: 22%;
-        height: 45%;
+        height: 35%;
         aspect-ratio: 1/1;
     }
     .message{
