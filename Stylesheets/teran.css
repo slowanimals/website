@@ -246,14 +246,15 @@ body{
     }
     .moon{
         position: absolute;
-        top: 22%;
-        height: 35%;
+        top: 27%;
+        height: 37%;
+        width: 37vh;
         aspect-ratio: 1/1;
     }
     .message{
-        font-size: 0.5em;
+        font-size: 0.4em;
         /* padding: 50%; */
-        width: 80%;
+        width: 90%;
         /* height: 80%; */
     }
     .orbiting-gif{
