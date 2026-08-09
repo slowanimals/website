@@ -247,7 +247,7 @@ body{
     .moon{
         position: absolute;
         top: 27%;
-        left: 16%;
+        left: 14%;
         height: 37%;
         width: 37vh;
         aspect-ratio: 1/1;
@@ -289,10 +289,10 @@ body{
     }
     @keyframes orbit{
         0%{
-            transform: rotate(0deg) translate(210px) rotate(0deg);
+            transform: rotate(0deg) translate(205px) rotate(0deg);
         }
         100%{
-            transform: rotate(360deg) translate(210px) rotate(-360deg);
+            transform: rotate(360deg) translate(205px) rotate(-360deg);
         }
     }
 
